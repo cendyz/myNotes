@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+    <div class="menu">
+        <h1><i class="fa-solid fa-note-sticky"></i> MyNotes</h1>
+        <div class="menu-buttons">
+            <button class="add icon"><i class="fas fa-plus"></i> Dodaj</button>
+            <button class="delete-all icon"><i class="fa-regular fa-trash-can"></i> Usuń wszystkie</button>
+        </div>
+    </div>
+
+    <div class="note-area">
+        <!-- <div class="note">
+
+            <div class="note-header">
+                <h3 class="note-title"> Notatka #1</h3>
+                <button class="delete-note">
+                    <i class="fas fa-times icon"></i>
+                </button>
+            </div>
+
+            <div class="note-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, ab delectus eos quas
+                voluptatum praesentium hic dolorum dolorem perspiciatis, in, fugiat veniam omnis est nam exercitationem
+                ipsam voluptas consectetur mollitia?</div>
+
+        </div> -->
+    </div>
+
+    <div class="note-panel">
+        <h2>Dodaj notatkę</h2>
+        <label for="category">Wybierz kategorię</label>
+        <select id="category" onchange="selectValue()">
+            <option value="0" disabled selected>- wybierz kategorię -</option>
+            <option value="1">Zakupy</option>
+            <option value="1">Praca</option>
+            <option value="1">Inne</option>
+        </select>
+        <label for="text">Wpisz treść nostatki:</label>
+        <textarea id="text"></textarea>
+
+        <p class="error">Uzupełnij wszystkie pola!</p>
+
+        <div class="panel-buttons">
+            <button class="icon save"><i class="fas fa-save"></i> Zapisz</button>
+            <button class="icon cancel"><i class="far fa-window-close"></i> Anuluj</button>
+        </div>
+    </div>
+
+</body>
+
+<script src="https://kit.fontawesome.com/e03e0916a7.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+<script src="./js/main.js"></script>
+</body>
+
+</html>
